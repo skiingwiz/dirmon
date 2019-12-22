@@ -1,0 +1,9 @@
+[Unit]
+Description=Run dirmon repeatedly
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=6m
+
+[Install]
+WantedBy=timers.target

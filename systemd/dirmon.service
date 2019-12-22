@@ -1,0 +1,11 @@
+[Unit]
+Description=Directory Monitor for running tasks based on file existance
+
+[Service]
+Type=oneshot
+ExecStart=/opt/dirmon/monitor.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
